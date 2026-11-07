@@ -1,0 +1,12 @@
+server:
+  port: 8087
+spring:
+  elasticsearch:
+    uris: http://192.168.31.129:9200
+# 搜索服务没有数据库事务，无需 seata
+seata:
+  enabled: false
+hm:
+  swagger:
+    title: 搜索服务接口文档
+    package: com.hmall.search.controller
